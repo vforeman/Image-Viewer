@@ -17,9 +17,13 @@ Alston will create the image upload factor.
 
 
 
-
+Also, if anyone has any trouble downloading pygames. Use Tkinter
 
 
 
 
 A simple image viewer
+
+
+
+
