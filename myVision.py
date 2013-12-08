@@ -1,9 +1,37 @@
 import sys, pygame
 
+from pygame import time 
+
+
 from pygame import * 
 
 
 
+
+
+
+
+
+
+def swell(bl, pos):
+
+    x,y = pos
+
+    for b in bl:
+        if b.collidepoint(x,y):
+            b.inflate(30,30)
+
+            
+
+
+    
+
+
+
+
+    
+
+    
 def main():
 
     # Initialise screen
@@ -34,35 +62,69 @@ def main():
     pygame.draw.rect(screen,(104,114,113), baseLayer,0)
 
 
-    blueButton = pygame.Rect(100, 500, 90, 65 )
 
-    # blueButton = pygame.Rect(100, 500, 90, 65 )
-    pygame.draw.rect(screen, (0,100,0), blueButton)
+    #red button
+    ButtonList=[]
+    redButton = pygame.Rect(100, 500, 90, 65 )
+    ButtonList.append(redButton)
+    pygame.draw.rect(screen, (100,0,0), redButton)
 
-    #makes blue square button
+    #green button
+    greenButton = pygame.Rect(250, 500, 90, 65 )
+    ButtonList.append(greenButton)
+    pygame.draw.rect(screen, (0,100,0), greenButton)
 
-   # pygame.Rect(100, 500, 70, 45 )
-
-    pygame.draw.circle(screen, (255,255,0), (300,530), 35)
-
-    # yellow circle
-
-    redButton = pygame.Rect(135, 500, 70, 45 )
+    #blue button 
+    blueButton = pygame.Rect(400, 500, 90, 65 )
+    ButtonList.append(blueButton)
+    pygame.draw.rect(screen, (0,0,100), blueButton)
 
 
-    pygame.draw.polygon(screen, (255,0,0), [ (440, 500), (490,550), (390,550) ])
-    # [ (440, 500), (515,550), (365,550) ])
-
-    
 
     
- 
+    mousePos = pygame.mouse.get_pos()
     
+
+
+            
+            
+
+    
+    
+    
+    
+        
     while True :
         pygame.display.update()
+        swell(ButtonList,mousePos)
         for event in pygame.event.get():
             if event.type == QUIT:
                 pygame.quit()
                 sys.exit()
+
+
+            
+            
+
+
+            
+
+                print "hello"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
 if __name__ == '__main__': main()
