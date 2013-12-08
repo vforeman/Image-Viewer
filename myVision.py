@@ -10,17 +10,6 @@ from pygame import *
 
 
 
-def swell(button, base):
-
-    button = pygame.Rect(0, 0, 90, 65 )
-    #button = pygame.Rect(100, 500, 90, 65 )
-
-    # blueButton = pygame.Rect(100, 500, 90, 65 )
-    pygame.draw.rect(base, (255,255,255), button)
-
-
-
-    return button,
 
 
 
