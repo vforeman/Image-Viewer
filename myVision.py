@@ -1,9 +1,27 @@
 import sys, pygame
 
+from pygame import time 
+
+
 from pygame import * 
 
 
 
+
+
+
+def swell(button, base):
+
+    button = pygame.Rect(0, 0, 90, 65 )
+    #button = pygame.Rect(100, 500, 90, 65 )
+
+    # blueButton = pygame.Rect(100, 500, 90, 65 )
+    pygame.draw.rect(base, (255,255,255), button)
+
+
+
+    return button,
+    
 def main():
 
     # Initialise screen
@@ -34,29 +52,29 @@ def main():
     pygame.draw.rect(screen,(104,114,113), baseLayer,0)
 
 
-    blueButton = pygame.Rect(100, 500, 90, 65 )
 
-    # blueButton = pygame.Rect(100, 500, 90, 65 )
-    pygame.draw.rect(screen, (0,100,0), blueButton)
+    #makes Green button
+    redButton = pygame.Rect(100, 500, 90, 65 )
+    pygame.draw.rect(screen, (100,0,0), redButton)
 
-    #makes blue square button
-
-   # pygame.Rect(100, 500, 70, 45 )
-
-    pygame.draw.circle(screen, (255,255,0), (300,530), 35)
-
-    # yellow circle
-
-    redButton = pygame.Rect(135, 500, 70, 45 )
+    #makes
+    greenButton = pygame.Rect(250, 500, 90, 65 )
+    pygame.draw.rect(screen, (0,100,0), greenButton)
 
 
-    pygame.draw.polygon(screen, (255,0,0), [ (440, 500), (490,550), (390,550) ])
-    # [ (440, 500), (515,550), (365,550) ])
+    blueButton = pygame.Rect(400, 500, 90, 65 )
+    pygame.draw.rect(screen, (0,0,100), blueButton)
 
+
+
+   
+
+    
     
 
     
- 
+
+
     
     while True :
         pygame.display.update()
