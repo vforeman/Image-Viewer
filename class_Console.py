@@ -7,5 +7,13 @@ import os
 import sys
 
 
+def getFile():
 
-os.system('cls')
+    filename=''
+    while not os.path.isfile(filename):
+    	filename=raw_input("enter filename")
+    	os.system('cls')
+    return filename
+
+
+    bl[b]
