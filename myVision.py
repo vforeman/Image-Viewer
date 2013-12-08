@@ -1,3 +1,6 @@
+####################myVision.py
+###
+
 import sys, pygame
 
 from pygame import * 
@@ -16,7 +19,6 @@ def main():
     screen.fill((255,255,255))
     # Makes whole screen white
     
-  
     leftWall = pygame.Rect(0, 0, 60, 600)
     
     pygame.draw.rect(screen,(64,50,132), leftWall,0)
@@ -33,7 +35,6 @@ def main():
 
     pygame.draw.rect(screen,(104,114,113), baseLayer,0)
 
-
     blueButton = pygame.Rect(100, 500, 90, 65 )
 
     # blueButton = pygame.Rect(100, 500, 90, 65 )
@@ -46,7 +47,7 @@ def main():
     pygame.draw.circle(screen, (255,255,0), (300,530), 35)
 
     # yellow circle
-
+    print "hey"
     redButton = pygame.Rect(135, 500, 70, 45 )
 
 
@@ -54,7 +55,6 @@ def main():
     # [ (440, 500), (515,550), (365,550) ])
 
     
-
     
  
     
